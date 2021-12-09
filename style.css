@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(214, 213, 213);
+}
+
+h1.Title {
+  position: absolute;
+  top: 40px;
+  font-family: Playfair Display;
+}
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  margin: 0 30px;
+}
+ul li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: 0.5s;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  font-size: 30px !important;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+ul li span:nth-child(4) {
+  transform: rotate(-15deg);
+}
+ul li span:nth-child(3) {
+  transform: rotate(15deg);
+}
+ul li span:nth-child(2) {
+  transform: rotate(-18deg);
+}
+ul li span:nth-child(1) {
+  transform: rotate(18deg);
+}
+ul li:hover span {
+  box-shadow: -1px 1px 1px rgba((0), 0, 0, 0.9);
+}
+ul li:hover span:nth-child(5) {
+  transform: translate(0, -50px);
+  opacity: 1;
+}
+ul li:hover span:nth-child(4) {
+  transform: translate(0, -35px) rotate(-18deg);
+  opacity: 0.8;
+}
+ul li:hover span:nth-child(3) {
+  transform: translate(0, -25px) rotate(18deg);
+  opacity: 0.6;
+}
+ul li:hover span:nth-child(2) {
+  transform: translate(0, -15px) rotate(-22deg);
+
+  opacity: 0.4;
+}
+ul li:hover span:nth-child(1) {
+  transform: translate(0, 0) rotate(22deg);
+
+  opacity: 0.2;
+}
+ul li:nth-child(1) span {
+  background: #3b5999;
+}
+ul li:nth-child(2) span {
+  background: #55acee;
+}
+ul li:nth-child(3) span {
+  background: #dd4b39;
+}
+ul li:nth-child(4) span {
+  background: #0077b5;
+}
+ul li:nth-child(5) span {
+  background: #e4405f;
+}
